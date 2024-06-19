@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header><img src="https://vladum.ro/wp-content/uploads/2020/09/contact-3.jpg" alt="Contact us" width="200px" height="200px"></header>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    
+    <br>
+
+      <h1>Contact form</h1>
+    <form>
+        <div>
+            <label for="prenume">Prenume</label>
+            <input type="text" id="prenume">
+        </div>
+        <br>
+        <div>
+            <label for="nume">Nume</label>
+            <input type="text" id="Nume">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="Email">
+        </div>
+        <br>
+        <div>
+            <form action="/action_page.php">
+             
+                <script>
+                // This script is just for demonstration purposes and can be replaced with your actual logic
+                function getSelectedTopic() {
+                const dropdown = document.getElementById("topicDropdown");
+                const selectedTopic = dropdown.value;
+                // Send message based on the selectedTopic value (e.g., capabilities, limitations, faq)
+                console.log("Sending message about", selectedTopic);
+                }
+                </script>
+
+                <label for="topicDropdown">Select topic:</label>
+                <select id="topicDropdown" onchange="getSelectedTopic()">
+                <option value="capabilities">Capabilities</option>
+                <option value="limitations" selected>Limitations</option>
+                <option value="faq">FAQ</option>
+                </select>
+                    <textarea name="email" id="email" rows="5" cols="50">
+                    Please input your message.
+                    </textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div>
+            <label for="courses">Subscribe to newsletter</label>
+            <br>
+            <br>
+            <input type="radio" name="" id="newsletter"><label>Yes</label>
+            <input type="radio" name="" id="newsletter"><label>No</label>
+         </div>
+         <br>
+         <br>
+         <div>
+            <input type="checkbox" name="" id="tc">
+            <label for="tc">I have read and agree to the Privacy Policy.</label>
+         </div>
+   </form>
+
+
+    <a href="https://www.facebook.com/Skoda.ro/" target="_blank">
+        <img src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" width="50px" height="50px">
+    </a>
+</body>
+</html>
